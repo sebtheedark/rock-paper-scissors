@@ -1,10 +1,12 @@
+const computerSelection = computerPlay
+
 function playerSelection() {
     const playerSelection = prompt("Lets play rock, paper, scissors. Which is yours?")
 
     return playerSelection
 }
 
-function computerSelection() {
+function computerPlay() {
     const pieces = ['rock', 'paper', 'scissors'];
     const piece = pieces[Math.floor(Math.random() * pieces.length)]
     
@@ -51,6 +53,7 @@ function game(playRound) {
 
     } return playRound
 }
+
 
 console.log(playRound(playerSelection(), computerSelection()));
 
