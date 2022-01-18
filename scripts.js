@@ -1,4 +1,10 @@
-function computerPlay() {
+function playerSelection() {
+    const playerSelection = prompt("Lets play rock, paper, scissors. Which is yours?")
+
+    return playerSelection
+}
+
+function computerSelection() {
     const pieces = ['rock', 'paper', 'scissors'];
     const piece = pieces[Math.floor(Math.random() * pieces.length)]
     
@@ -15,7 +21,6 @@ function playRound(playerSelection, computerSelection) {
         } else if (computerSelection == 'rock') {
             return 'Its a tie!'
         }
-
     }
 
     // Scissors
@@ -40,8 +45,12 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 }
-const playerSelection = 'paper'
-const computerSelection = computerPlay();
 
-console.log(playRound(playerSelection, computerSelection));
+function game(playRound) {
+    for (let pr = 0; pr < 5; pr++){
+
+    } return playRound
+}
+
+console.log(playRound(playerSelection(), computerSelection()));
 
