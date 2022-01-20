@@ -1,7 +1,5 @@
-const computerSelection = computerPlay
-
 function playerSelection() {
-    const playerSelection = prompt("Lets play rock, paper, scissors. Which is yours?")
+    const playerSelection = prompt("Lets play rock, paper, scissors. Which is yours?").toLowerCase();
 
     return playerSelection
 }
@@ -14,7 +12,7 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    // Rock 
+    // Rock
     if (playerSelection == 'rock') {
         if (computerSelection == 'scissors') {
             return 'You win! Rock beats Scissors!'
@@ -48,12 +46,16 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-function game(playRound) {
-    for (let pr = 0; pr < 5; pr++){
 
-    } return playRound
-}
+function game() {
+    let computerSelection = computerPlay();
+    let userInput = playerSelection();
+    let rounds = playRound(computerSelection, userInput); 
+    let totalRounds = 0;
+    
+    for (totalRounds; totalRounds < 5; totalRounds++){
+        
+    } return rounds; 
+}   
 
-
-console.log(playRound(playerSelection(), computerSelection()));
-
+console.log(game())
