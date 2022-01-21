@@ -48,14 +48,15 @@ function playRound(playerSelection, computerSelection) {
 
 
 function game() {
+    
+    for (let i =0 ; i < 5; i++){
     let computerSelection = computerPlay();
     let userInput = playerSelection();
-    let rounds = playRound(computerSelection, userInput); 
-    let totalRounds = 0;
-    
-    for (totalRounds; totalRounds < 5; totalRounds++){
+        let rounds = playRound(computerSelection, userInput); 
+        console.log(rounds); 
+   
         
-    } return rounds; 
+    } 
 }   
 
 console.log(game())
